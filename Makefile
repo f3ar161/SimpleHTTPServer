@@ -9,6 +9,11 @@ run: ## Run the application
 	@echo "Running application..."
 	go run main.go
 
+dependencies: 
+	@echo "Adding dependencies..."
+	go mod tidy
+	go mod vendor
+
 test: ## Run tests
 	@echo "Running tests..."
 	go test ./internal -v 

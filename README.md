@@ -8,6 +8,9 @@ A REST API for event management built with Go, PostgreSQL, and Docker.
 # 1. Start PostgreSQL
 make db-up
 
+# 2. Dependencies
+make dependencies
+
 # 2. Copy environment configuration
 cp .env.local .env
 
